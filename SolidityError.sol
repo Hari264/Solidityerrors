@@ -4,13 +4,13 @@ pragma solidity ^0.8.13;
 contract Error {
     function testRequire(uint _i) public pure {
  
-        require(_i >= 10 && _i <= 100 , "Input must be between 10 to 100");
+        require(_i >= 100 && _i <= 1000 , "Input must be between 100 to 1000 msg by requirea");
     }
 
     function testRevert(uint _i) public pure {
 
-        if (_i <= 10 && _i>=100) {
-            revert("Input must be greater than 10 msg by revert");
+        if (_i <= 100 && _i>=1000) {
+            revert("Input must be greater than 100 and lesser than 1000 msg by revert");
         }
     }
 
